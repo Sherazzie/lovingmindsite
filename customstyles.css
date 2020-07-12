@@ -16366,6 +16366,10 @@ h3 {
   }
 }
 /* Modify the backgorund color */
+hr {
+  border-top: 1px solid black;
+}
+
 .navbarcustom {
   background-image: linear-gradient(to right, #FEFAF5, #fedbbb);
 }
@@ -16376,6 +16380,10 @@ h3 {
   font-size: 25px;
   font-style: normal;
   font-variant: normal;
+}
+
+a.navbar-brand {
+  display: contents;
 }
 
 .footer {
@@ -16433,6 +16441,7 @@ h3 {
 .introstyle {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 790px) {
@@ -16539,6 +16548,12 @@ h3 {
   .cfdiv {
     display: flex;
     flex-direction: column;
+  }
+
+  .centerflex {
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 }
 .collapse-content {

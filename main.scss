@@ -32,7 +32,11 @@ $container-max-widths: (
 @import "node_modules/bootstrap/scss/bootstrap";
 
 /* Modify the backgorund color */ 
+hr{
+	border-top: 1px solid black;
 
+	
+}
 .navbarcustom{
   background-image: linear-gradient(to right,#FEFAF5, #fedbbb);
 }
@@ -41,11 +45,13 @@ $container-max-widths: (
     font-family: Consolas,monaco,monospace ; 
     font-size: 25px;
     font-style: normal;
-    font-variant: normal; 
+	font-variant: normal; 
 
 }
 
-
+a.navbar-brand {
+	display: contents;
+  }
 
 .footer {
   background-image: linear-gradient(to left,#FEFAF5, #fedbbb);
@@ -110,6 +116,7 @@ $container-max-widths: (
 .introstyle{
   display:flex;
   justify-content: center;
+  text-align: center;
 
 }
 
@@ -248,7 +255,11 @@ width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
-	
+	.centerflex{
+		display:flex;
+		justify-content: center;
+		align-self: center;
+	}
   
   }
 

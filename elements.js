@@ -28,8 +28,7 @@ $(window).on('load', function () {
         var contentheader = document.createElement("h1");
         var contentheader2 = document.createElement("h1");
         $(maindiv).addClass('col d-flex flex-column');
-        $(divheader).addClass('profileinfo introstyles text-justify pb-4');
-        $(divheader2).addClass('profileinfo introstyles text-justify pb-4');
+
         $(contentheader).addClass('pb-4');
         $(contentheader2).addClass('pb-4');
         $(c1).addClass('profileinfo text-justify pb-4');
@@ -113,8 +112,8 @@ $(window).on('resize', function () {
         var contentheader = document.createElement("h1");
         var contentheader2 = document.createElement("h1");
         $(maindiv).addClass('col d-flex flex-column');
-        $(divheader).addClass('profileinfo introstyles text-justify pb-4');
-        $(divheader2).addClass('profileinfo introstyles text-justify pb-4');
+        $(divheader).addClass('profileinfo introstyles  pb-4');
+        $(divheader2).addClass('profileinfo introstyles  pb-4');
         $(contentheader).addClass('pb-4');
         $(contentheader2).addClass('pb-4');
         $(c1).addClass('profileinfo text-justify pb-4');

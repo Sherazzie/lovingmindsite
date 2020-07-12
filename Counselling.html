@@ -8,62 +8,46 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="customstyles.css" />
-
-  <script>
-    function myFunction(sel) {
-      var option= sel.options[sel.selectedIndex].text;
-      if (option == "Senior Counsellor")
-      {
-        document.getElementById("icimg").src = "Images/90banner.png";
-        document.getElementById("mccimg").src = "Images/180banner.png";
-        document.getElementById("ftcimg").src = "Images/240banner.png";
-      }
-      else{
-        document.getElementById("icimg").src = "Images/70banner.png";
-        document.getElementById("mccimg").src = "Images/140banner.png";
-        document.getElementById("ftcimg").src = "Images/200banner.png";
-      }
-      
-    }
-    </script>
-
   <title>Loving Minds</title>
 </head>
 
 <body>
 
-  <nav class="navbar  navbar-expand-lg  navbarcustom ">
-    <a class="navbar-brand ml-4" href="#">
-      <img src="Images/logo_transparent-removebg-preview.png" class="d-inline-block align-top" alt="" loading="lazy">
+  <nav class="navbar  navbar-expand-lg navbar-light navbarcustom ">
+    <a class="navbar-brand" href="Index.html">
+      <img  style="width:30%;" src="Images/logo_transparent-removebg-preview.png" >
     </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown ">
-      <ul class="navbar-nav navtext ">
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav navtext  ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="Index.html">Home </a>
+          <a class="nav-link ml-5" href="Index.html">Home </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active ">
           <a class="nav-link ml-5 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Who We Are
           </a>
           <div class="dropdown-menu ml-5 " aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Our Work</a>
-            <a class="dropdown-item" href="OurTeam.html">Our Team</a>
-            <a class="dropdown-item" href="Counselling.html">FAQ</a>
+            <a class="dropdown-item" href="Index.html#a1">Our Work</a>
+            <a class="dropdown-item" href="Index.html#visiondiv">Our Vision/Mission</a>
+            <a class="dropdown-item" href="Index.html#a12">Our Team</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
           <a class="nav-link ml-5 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Our Services
           </a>
           <div class="dropdown-menu ml-5 " aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="Counselling.html">Counselling</a>
-            <a class="dropdown-item" href="#">Training Programmes</a>
+            <a class="dropdown-item" href="Counselling.html#tpouterdiv">Training Programmes</a>
           </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link ml-5" href="ContactUs.html">Contact Us</a>
         </li>
       </ul>
@@ -71,90 +55,151 @@
     </div>
   </nav>
 
-  <div class="container-fluid ">
-
-    <div class="row">
-      <div class="col-csbk-5 d-flex justify-content-center ">
-        <img src="Images/transparent750by750.png" width="100%" height="auto" style="max-height: 750px;"  />
+  <div class="container-fluid homeintro consolas pb-10">
+    <div class="row mt-3">
+      <div class="col-bk1050-4 d-flex justify-content-start"></div>
+      <div class="col-bk1050-8">
+        <hr>
       </div>
-      <div class="col-csbk d-flex flex-column mt-3">
-        <div class="col ">
-          <div class="d-flex flex-row justify-content-center ">
-            <h3><u>Fees:</u></h3>
-            <select onchange="myFunction(this)" class="form-control ml-7" id="ddl_cslrtype" style="width:auto;">
+    </div>
+    <div class="row mt-3">
+      <div class="col-bk1050-4 ">
+        <div class="treeimagewrapper">
+          <img src="Images/hearttree.png" style="max-width: 100%; height:auto; max-height: 500px;" />
+        </div>
+      </div>
+      <div class="col-bk1050-8 ">
+        <div class="d-flex flex-column ">
+          <h1 class="csheader">Counselling Services</h1>
+          <div class="pt-3  profileinfo">
+            Our trained counsellors provide clinical counselling support to all individuals, couples, and families
+            regardless of race or nationality.
+          </div>
+          <div class="pt-3 profileinfo">
+            Refer to the the heart-tree for the various types of counselling support.
+          </div>
+          <div class="pt-3 ">
+            * Due to the current Covid-19 situation, all counselling will be done online. 
+          </div>
+        </div>
+        <!--
+          <div class="row mt-5 cfdiv">
+            <h3 class="cfheader">Counselling Fees:</h3>
+            <select onchange="myFunction(this)" class="form-control cfddl" id="ddl_cslrtype" style="width:auto;">
               <option>Counsellor</option>
-              <option >Senior Counsellor</option>
-            </select> 
+              <option>Senior Counsellor</option>
+            </select>
+      
           </div>
-          <div class="text-center mt-5">Our trained counsellors provide clinical counselling support to all individuals, couples, and families regardless of race and nationality. 
-            <br>	
-            * Due to Covid-19 situation, all counselling will be don the currente online. Each session is 50 minutes.
-            </div>
+        -->
+          <div class="row mt-5 ">
+            <table class="table table-bordered ">
+              <thead class="thead-dark">
+                <tr>
+                  <th >Type</th>
+                  <th>Counsellor</th>
+                  <th>Senior Counsellor</th>
+                
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-active">
+                  <td >Individual Counselling</td>
+                  <td>$70 SGD /Session</td>
+                  <td>$90 SGD /Session</td>
+                </tr>
+                <tr >
+                  <td>Marital / Couple Counselling</td>
+                  <td>$140 SGD /Session</td>
+                  <td>$180 SGD /Session</td>
+                  
+                </tr>
+                <tr class="table-active">
+                  <td>Family Therapy</td>
+                  <td>$200 SGD /Session</td>
+                  <td>$240 SGD /Session</td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+
         
-          <div class="cardplacement mt-6">
-            <div class="card cardinfo ml-3 mb-3" style="max-width: 18rem;">
-              <div class="card-header" id="cardic">Individual Counselling</div>
-              <div class="card-body cardbody">
-                <img src="Images/Singles Therapy.jpg" width="100%" height="auto" />
-                <img  id="icimg" class=" mt-3" src="Images/70banner.png" />
-                <input onclick="location.href='ContactUs.html';" class="  mt-3" type="image" src="Images/EnquireNow.png" />
-              </div>
-
-            </div>
-            <div class="card cardinfo ml-3 mb-3" style="max-width: 18rem;">
-              <div class="card-header" >Marital/Couple Counselling</div>
-              <div class="card-body cardbody">
-                <img  src="Images/Singles Therapy.jpg" width="100%" height="auto" />
-                <img  id="mccimg" class=" mt-3" src="Images/140banner.png" />
-                <input onclick="location.href='ContactUs.html';" class=" mt-3" type="image" src="Images/EnquireNow.png" />
-              </div>
-
-            </div>
-
-            <div class="card cardinfo ml-3 " style="max-width: 18rem;">
-              <div class="card-header">Family Therapy</div>
-              <div class="card-body cardbody">
-                <img  src="Images/Singles Therapy.jpg" width="100%" height="auto" />
-                <img  id="ftcimg"class=" mt-3" src="Images/200banner.png" />
-                <input onclick="location.href='ContactUs.html';" class="mt-3" type="image" src="Images/EnquireNow.png" />
-              </div>
-
-            </div>
-
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 d-flex justify-content-start"></div>
+      <div class="col-8">
+        <hr>
+      </div>
+    </div>
+    <div class="row" id="tpouterdiv" >
+      
+      <div class="col-4 d-flex flex-column justify-content-center" id="tpinnerdiv">
+        <div class="d-flex  justify-content-center">  <input onclick="changeTP(this.id)" id="btn1" type="image" src="Images/supportforcaregivers.png"  style="max-width: 100%; height:auto; max-height: 150px;"/></div>
+        <div class="d-flex  justify-content-center  mt-5"> <input onclick="changeTP(this.id)" id="btn2" type="image" src="Images/ParentingSeminars.png"  style="max-width: 100%; height:auto; max-height: 150px;"/></div>
+        <div class="d-flex  justify-content-center  mt-5"> <input onclick="changeTP(this.id)" id="btn3" type="image" src="Images/MarriagePrep.png"  style="max-width: 100%; height:auto; max-height: 150px;"/></div>
+        <div class="d-flex  justify-content-center  mt-5"> <input onclick="changeTP(this.id)" id="btn4" type="image" src="Images/signpostprog.png"  style="max-width: 100%; height:auto; max-height: 150px;"/></div>
+      </div>
+      <div class="col-8">
+        <div class="d-flex flex-column ">
+          <h1>Training Programmes</h1>
+          <div class= "profileinfo pt-3 ">
+            Loving Mind has various programmes targeted to different segments of society. Each programme can be tailored to the organisation’s requirements. 
           </div>
-
-        </div>
-
-
-        <div class="container-fluid footer">
-          <div class="row">
-            <div class="col">
-              <i class="fab fa-facebook-square fa-2x  ml-2"></i>
-              <i class="fab fa-twitter-square fa-2x   ml-2"></i>
-              <i class="fab fa-instagram-square fa-2x   ml-2"></i>
-              <i class="fab fa-youtube-square fa-2x   ml-2"></i>
-
-            </div>
-            <div class="col d-flex justify-content-end">
-              Copyright @ Loving Minds
-            </div>
+          <div class="pt-3 ">
+            *Click the menu to the left to read about different programmes
           </div>
-        </div>
+          <div>
+            <h2 id ="contentheader" class="pt-4 ">Support For Cavegivers</h2>
+          </div>
+          
+          <div id="content1" class="pt-3 profileinfo">
+            Taking care of loved ones with special needs can be exhausting, frustrating and lonely. Recent studies have shown that caregivers often suffer from burn out.
+          </div>
+          <div id="content2" class="pt-3 profileinfo">
+            Loving Mind’s support group are designed and run by counsellors who themselves are caregivers of loved ones with special needs.
+          </div>
+          <div id="content3" class="pt-3 profileinfo">
+            We understand the difficulties that caregivers face and our support group offer practical advice and support for our fellow caregivers.
+          </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col">
+        <i class="fab fa-facebook-square fa-2x  ml-2"></i>
+        <i class="fab fa-twitter-square fa-2x   ml-2"></i>
+        <i class="fab fa-instagram-square fa-2x   ml-2"></i>
+        <i class="fab fa-youtube-square fa-2x   ml-2"></i>
+
+      </div>
+      <div class="col d-flex justify-content-end">
+        Copyright @ Loving Minds chec
+      </div>
+    </div>
+  </div>
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-          crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-          crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/6caf106418.js" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6caf106418.js" crossorigin="anonymous"></script>
+  <script src="changetpcontent.js"></script>
 
 </body>
 

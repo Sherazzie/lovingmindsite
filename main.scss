@@ -1,0 +1,363 @@
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 3.5),
+  8: ($spacer * 4),
+  9: ($spacer * 4.5),
+  10: ($spacer * 5),
+  11: ($spacer * 5.5),
+  12: ($spacer * 6),
+  13: ($spacer * 12.5),
+  14: ($spacer * 20)
+);
+
+$grid-breakpoints: (
+xs: 0,
+sm: 600px,
+md: 800px,
+lg: 1000px,
+bk1050:1050px,
+csbk:1245px,
+xl: 1280px // <-- modified!
+);
+
+$container-max-widths: (
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  bk1050:1050px,
+  csbk:1245px,
+  xl: 1280px // <-- modified!
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/* Modify the backgorund color */ 
+
+.navbarcustom{
+  background-image: linear-gradient(to right,#FEFAF5, #fedbbb);
+}
+.navtext a{
+    color:black;
+    font-family: Consolas,monaco,monospace ; 
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal; 
+
+}
+
+
+
+.footer {
+  background-image: linear-gradient(to left,#FEFAF5, #fedbbb);
+  color:black;
+  font-family: Consolas,monaco,monospace ; 
+  font-size: 15px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  
+}
+.formui
+{
+    font-family: Consolas,monaco,monospace ; 
+}
+
+.profileheading{
+  color:black;
+  font-family: Consolas,monaco,monospace ; 
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: underline; 
+
+}
+.profileinfo{
+  color:black;
+  font-family: Consolas,monaco,monospace ; 
+  font-size: 17px;
+  text-align: justify;
+
+}
+.cardinfo{
+  font-size:14px !important;
+  font-weight: 700;
+
+  
+}
+
+.cardplacement{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.cardbody{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+  
+}
+
+.consolas{
+  font-family: Consolas,monaco,monospace ; 
+}
+
+.introstyle{
+  display:flex;
+  justify-content: center;
+
+}
+
+
+@media screen and (max-width: 790px) {
+  .cardplacement{
+    
+    flex-direction: column;
+    
+    
+
+  }
+}
+
+@media screen and (max-width: 1555px) {
+  .cardinfo{
+    font-size:11px !important;
+    font-weight: 700;
+  
+    
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .cardinfo{
+    font-size:10px !important;
+    font-weight: 700;
+  
+    
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .introstyle{
+ 
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  
+  }
+  
+
+}
+
+@media screen and (max-width: 1050px) {
+	.introstyle{
+   
+	  flex-direction:column;
+	  align-items: center;
+	  justify-content: center;
+	  
+	  
+	  
+	
+	}
+	
+  
+  }
+
+.menwalking{
+width: 100%;
+  height: auto;
+}
+
+.csheader{
+	display:flex;
+	justify-content:start;
+	
+}
+.treeimagewrapper{
+	display:flex;
+	justify-content:center;
+	
+
+}
+.feesddl{
+	display: flex;
+	flex-direction: row;
+}
+.cfheader{
+	margin-left:1rem;
+}
+
+.cfddl{
+	margin-left:1rem;
+}
+
+@media screen and (max-width: 1050px) {
+	.csheader{
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		margin-top:3rem;
+		
+	}
+	.treeimagewrapper{
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
+	
+	}
+	.feescol{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cfdiv{
+		display: flex;
+		flex-direction: row;
+		justify-content:center;
+		align-items: center;
+
+	}
+  
+  }
+
+  @media screen and (max-width: 510px) {
+	.cfheader{
+		margin-left:0px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.cfddl{
+		margin-left:0px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.cfdiv{
+		display: flex;
+		flex-direction: column;
+	}
+	
+  
+  }
+
+
+  .collapse-content {
+	width: 50vw;
+	margin: auto;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .collapse1 {
+	background: #fff;
+  }
+  
+  .collapse1 a {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 0.9rem 1.8rem;
+	color: black;
+  position: relative;
+  border:1px solid black;
+  }
+  
+  .collapse1 a.instagram {
+  background: #fedbbb;
+ 
+  }
+  
+  .collapse1 a.twitter {
+	background: #fedbbb;
+  }
+  
+  .collapse1 a.dribbble {
+	background: #fedbbb;
+  }
+  
+  .collapse1 a.youtube {
+	background: #fedbbb;
+  }
+  
+  .collapse1 a:before {
+	content: "";
+	border-top: 7px solid black;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+  }
+  
+  .inner-content {
+	padding: 1.8rem;
+  }
+  
+  .content {
+	max-height: 0em;
+	transition: 0.3s linear 0s;
+	overflow: hidden;
+  }
+  
+  .collapse1 + .collapse a {
+	border-top: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  
+  h3 {
+	margin-bottom: 15px;
+  }
+  
+  .collapse1:target .content {
+	max-height: 60em;
+  }
+  
+  .collapse1:target a:before {
+	transform: rotate(-90deg);
+  }
+  
+  @media (max-width: 768px) {
+	.collapse-content {
+	  width: 80vw;
+	  margin: auto;
+	  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	}
+  }
+  @media (max-width: 425px) {
+	body {
+	  line-height: 1.3;
+	}
+	.collapse-content {
+	  width: 80vw;
+	}
+	.inner-content {
+	  padding: 1.2rem;
+	}
+	.inner-content h3 {
+	  margin-bottom: 0.3rem;
+	}
+  }
+  @media (max-width: 320px) {
+	body {
+	  line-height: 1.3;
+	}
+	.collapse-content {
+	  width: 80vw;
+	}
+	.inner-content {
+	  padding: 0.8rem;
+	}
+	.inner-content h3 {
+	  margin-bottom: 0.3rem;
+	}
+  }
+  

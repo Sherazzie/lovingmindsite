@@ -16669,7 +16669,7 @@ h3 {
 /* Style the list */
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  border: 1px solid black;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -16694,17 +16694,19 @@ h3 {
   border-bottom: 1px solid #eee;
   padding: 20px;
   text-align: center;
+  font-family: Consolas, monaco, monospace;
 }
 
 /* The "Sign Up" button */
 .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
+  background-color: #fedbbb;
+  border: solid 1px;
+  color: black;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+  font-family: Consolas, monaco, monospace;
 }
 
 /* Change the width of the three columns to 100%

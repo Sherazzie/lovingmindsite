@@ -134,7 +134,7 @@ function changeTP(clicked_id) {
         case "btn2":
             document.getElementById("contentheader").innerHTML="Parenting Seminars";
             document.getElementById("content1").innerHTML="Communicating with your children can be difficult. <br/> <br/>Our parenting seminars covers the following topics:";
-            document.getElementById("content2").innerHTML="1.Ways to effectively communicate with your children ";
+            document.getElementById("content2").innerHTML="1.Ways to effectively communicate with your children<br/><br/ ";
             document.getElementById("content3").innerHTML="2.Instilling healthy methods of discipline <br/><br/>3.Bonding with your children in the era of Social Media ";
             break;
         case "btn3":
